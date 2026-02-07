@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Santorini House | Case Vacanze da Nenella</title>
+
+  <meta name="description" content="Santorini House, casa vacanze accogliente e luminosa, ideale per il tuo soggiorno. Scopri foto, servizi e posizione.">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- HEADER CASA -->
+  <header class="header-casa">
+    <a href="index.html" class="back-arrow">&#8592;</a> <!-- freccia indietro -->
+    <h1>Santorini House</h1>
+    <p>Eleganza e relax nel cuore della città</p>
+    <a href="contatti.html" class="contact-icon">i</a> <!-- freccia indietro -->
+  </header>
+
+  <!-- Galleria -->
+<section class="galleria-layout">
+  <div class="galleria">
+    <img src="img/santorini_img11.jpeg" alt="Santorini House esterni" class="gallery-item" data-title="Ingresso esterno">
+    <img src="img/santorini_img3.jpeg" alt="Santorini House cucina" class="gallery-item" data-title="Cucina">
+    <img src="img/santorini_img2.jpeg" alt="Cucina" class="gallery-item" data-title="Cucina">
+    
+    <!-- quarta casella con sfondo sfocato + numero immagini extra -->
+    <div class="thumb-more" data-start="3">
+      <img src="img/santorini_img1.jpeg" alt="Bagno" class="thumb-more-bg">
+      <span class="thumb-more-text">+14</span>
+    </div>
+
+  </div>
+
+  <!-- DESTRA: TESTO -->
+  <div class="galleria-testo">
+    <!--<h2>Santorini House</h2>-->
+
+    <p class="intro">
+      Affacciata direttamente sul mare cristallino di San Pietro in Bevagna,
+      nel cuore della splendida Puglia, Santorini House è la soluzione ideale
+      per chi desidera una vacanza all’insegna del relax, del comfort e della
+      bellezza mediterranea.
+    </p>
+
+    <p>
+      La casa dispone di un <strong>patio privato</strong> e di una
+      <strong>terrazza fronte spiaggia</strong>, perfetti per godersi il sole,
+      la brezza marina e romantici tramonti a pochi passi dalla sabbia.
+    </p>
+
+    <p>
+      Gli interni, climatizzati e curati nei dettagli, comprendono:
+    </p>
+
+    <ul class="features">
+      <li>- Due camere da letto accoglienti</li>
+      <li>- Un luminoso soggiorno</li>
+      <li>- Cucina attrezzata con utensili e frigorifero</li>
+      <li>- Bagno moderno con doccia e asciugacapelli</li>
+    </ul>
+
+    <p class="note">
+      Asciugamani e lenzuola sono inclusi, per garantirti un soggiorno senza pensieri.
+    </p>
+  </div>
+
+
+  <!-- immagini extra nascoste per lightbox -->
+  <img src="img/santorini_img1.jpeg" alt="Santorini House bagno" class="gallery-item hidden" data-title="Bagno">
+  <img src="img/santorini_img14.jpeg" alt="Santorini House camera" class="gallery-item hidden" data-title="Prima camera">
+  <img src="img/santorini_img16.jpeg" alt="Santorini House camera" class="gallery-item hidden" data-title="Prima camera">
+  <img src="img/santorini_img7.jpeg" alt="Santorini House camera" class="gallery-item hidden" data-title="Seconda camera">
+  <img src="img/santorini_img10.jpeg" alt="Santorini House camera" class="gallery-item hidden" data-title="Seconda camera">
+  <img src="img/santorini_img13.jpeg" alt="Santorini House terrazza" class="gallery-item hidden" data-title="Terrazza con vista">
+  <img src="img/santorini_img15.jpeg" alt="Santorini House terrazza" class="gallery-item hidden" data-title="Terrazza con vista">
+  <img src="img/santorini_img17.jpeg" alt="Santorini House terrazza" class="gallery-item hidden" data-title="Terrazza con vista">
+  <img src="img/santorini_img6.jpeg" alt="Santorini House terrazza" class="gallery-item hidden" data-title="Terrazza con vista">
+  <img src="img/santorini_img12.jpeg" alt="Santorini House terrazza" class="gallery-item hidden" data-title="Terrazza con vista">
+  <img src="img/santorini_img8.jpeg" alt="Santorini House terrazza" class="gallery-item hidden" data-title="Terrazza con vista">
+  <img src="img/santorini_img9.jpeg" alt="Santorini House terrazza" class="gallery-item hidden" data-title="Terrazza con vista">
+  <img src="img/santorini_img5.jpeg" alt="Santorini House terrazza" class="gallery-item hidden" data-title="Terrazza con vista">
+  <img src="img/santorini_img4.jpeg" alt="Santorini House esterni" class="gallery-item hidden" data-title="Ingresso esterno">
+</section>
+
+
+  <!-- LIGHTBOX -->
+  <div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <span class="prev">&#10094;</span>
+    <span class="next">&#10095;</span>
+    
+    <div class="lightbox-title" id="lightbox-title">Titolo foto</div>
+    <img class="lightbox-content" id="lightbox-img" src="">
+    
+    <div class="lightbox-counter" id="lightbox-counter">1 / 3</div>
+  </div>
+
+  <!-- Posizione -->
+  <section class="galleria-posizione">
+    <h3>Dove si trova?</h3>
+    <p>
+      Via della Citronella, Strada privata via dei Filodendri, 74024 San Pietro in Bevagna, Italia<br>
+    </p>
+    <a href="https://maps.app.goo.gl/DnpgYixiyCc1Xy3W8" target="_blank" class="btn btn-maps">
+      Vedi su Google Maps
+    </a>
+  </section>
+
+  <!-- Caratteristiche -->
+  <div class="caratteristiche-casa">
+    <h3>Caratteristiche della casa</h3>
+    <ul>
+      <li>
+        <span class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="50px"><path d="M3 18v3.75A2.25 2.25 0 0 0 5.25 24h4.5a.75.75 0 0 0 .75-.75v-6a.75.75 0 0 1 .75-.75h1.5a.75.75 0 0 1 .75.75v6c0 .414.336.75.75.75h4.5A2.25 2.25 0 0 0 21 21.75V18a.75.75 0 0 0-1.5 0v3.75a.75.75 0 0 1-.75.75h-4.5l.75.75v-6A2.25 2.25 0 0 0 12.75 15h-1.5A2.25 2.25 0 0 0 9 17.25v6l.75-.75h-4.5a.75.75 0 0 1-.75-.75V18A.75.75 0 0 0 3 18m-1.72-.97L11.47 6.841a.75.75 0 0 1 1.06 0l10.19 10.19a.75.75 0 1 0 1.06-1.061L13.591 5.78a2.25 2.25 0 0 0-3.182 0L.219 15.97a.75.75 0 1 0 1.061 1.06m15.97-7.28v-1.5L16.5 9h3.75l-.75-.75v5.25a.75.75 0 0 0 1.5 0V8.25a.75.75 0 0 0-.75-.75H16.5a.75.75 0 0 0-.75.75v1.5a.75.75 0 0 0 1.5 0M16.522.3l-.407.543a1.793 1.793 0 0 0 .279 2.461c.12.102.14.28.045.406l-.411.548a.75.75 0 1 0 1.2.9l.407-.543a1.793 1.793 0 0 0-.279-2.461.295.295 0 0 1-.045-.406l.411-.548a.75.75 0 1 0-1.2-.9m3.75 0-.407.543a1.793 1.793 0 0 0 .279 2.461c.12.102.14.28.045.406l-.411.548a.75.75 0 1 0 1.2.9l.407-.543a1.793 1.793 0 0 0-.279-2.461.295.295 0 0 1-.045-.406l.411-.548a.75.75 0 1 0-1.2-.9"></path>
+          </svg>
+        </span>
+        <div>Intero alloggio tutto per te</div>
+      </li>
+      <li>
+        <span class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="50px">
+            <path d="M3.75 23.25V7.5a.75.75 0 0 0-1.5 0v15.75a.75.75 0 0 0 1.5 0M.22 21.53l2.25 2.25a.75.75 0 0 0 1.06 0l2.25-2.25a.75.75 0 1 0-1.06-1.06l-2.25 2.25h1.06l-2.25-2.25a.75.75 0 0 0-1.06 1.06M5.78 9.22 3.53 6.97a.75.75 0 0 0-1.06 0L.22 9.22a.75.75 0 1 0 1.06 1.06l2.25-2.25H2.47l2.25 2.25a.75.75 0 1 0 1.06-1.06M7.5 3.75h15.75a.75.75 0 0 0 0-1.5H7.5a.75.75 0 0 0 0 1.5M9.22.22 6.97 2.47a.75.75 0 0 0 0 1.06l2.25 2.25a.75.75 0 1 0 1.06-1.06L8.03 2.47v1.06l2.25-2.25A.75.75 0 1 0 9.22.22m12.31 5.56 2.25-2.25a.75.75 0 0 0 0-1.06L21.53.22a.75.75 0 1 0-1.06 1.06l2.25 2.25V2.47l-2.25 2.25a.75.75 0 0 0 1.06 1.06M10.5 13.05v7.2a2.25 2.25 0 0 0 2.25 2.25h6A2.25 2.25 0 0 0 21 20.25v-7.2a.75.75 0 0 0-1.5 0v7.2a.75.75 0 0 1-.75.75h-6a.75.75 0 0 1-.75-.75v-7.2a.75.75 0 0 0-1.5 0m13.252 2.143-6.497-5.85a2.25 2.25 0 0 0-3.01 0l-6.497 5.85a.75.75 0 0 0 1.004 1.114l6.497-5.85a.75.75 0 0 1 1.002 0l6.497 5.85a.75.75 0 0 0 1.004-1.114">
+            </path>
+          </svg>
+        </span>        
+        <div>55 m² superficie</div>
+      </li>
+      <li>
+        <span class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="50px">
+            <path d="M16.01 15a4.5 4.5 0 1 0-9 0l.75-.75a3.75 3.75 0 1 0 0 7.5 4.96 4.96 0 0 0 2.245-.59 3.28 3.28 0 0 1 3.018.005c.677.365 1.44.567 2.22.585a3.75 3.75 0 1 0 .018-7.5zm-1.5 0c0 .414.336.75.75.75a2.25 2.25 0 0 1 0 4.5 3.4 3.4 0 0 1-1.536-.41 4.79 4.79 0 0 0-4.42-.005 3.46 3.46 0 0 1-1.562.415A2.247 2.247 0 0 1 5.51 18a2.25 2.25 0 0 1 2.25-2.25.75.75 0 0 0 .75-.75 3 3 0 1 1 6 0m-9.75-3.75a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m1.5 0a3 3 0 1 0-6 0 3 3 0 0 0 6 0m3-6a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m1.5 0a3 3 0 1 0-6 0 3 3 0 0 0 6 0m6 0a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m1.5 0a3 3 0 1 0-6 0 3 3 0 0 0 6 0m3.75 6a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m1.5 0a3 3 0 1 0-6 0 3 3 0 0 0 6 0">
+            </path>
+          </svg>
+        </span>
+        <div>Animali ammessi</div>
+      </li>
+      <li>
+        <span class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="50px">
+            <path d="M19.5 9h2.25a.75.75 0 0 1 .75.75v3a.75.75 0 0 1-.75.75h-7.5a.75.75 0 0 0 0 1.5h7.5A2.25 2.25 0 0 0 24 12.75v-3a2.25 2.25 0 0 0-2.25-2.25H19.5a.75.75 0 0 0 0 1.5M5.25 13.5h-1.5l.75.75v-6L3.75 9h7.5a.75.75 0 0 0 0-1.5h-7.5a.75.75 0 0 0-.75.75v6c0 .414.336.75.75.75h1.5a.75.75 0 0 0 0-1.5M15 12v2.25a.75.75 0 0 0 1.5 0V12a.75.75 0 0 0-1.5 0M0 8.25v6a.75.75 0 0 0 1.5 0v-6a.75.75 0 0 0-1.5 0m1.28 15.53 22.5-22.5A.75.75 0 0 0 22.72.22L.22 22.72a.75.75 0 1 0 1.06 1.06M4.5.75A2.25 2.25 0 0 1 2.25 3 2.25 2.25 0 0 0 0 5.25a.75.75 0 0 0 1.5 0 .75.75 0 0 1 .75-.75A3.75 3.75 0 0 0 6 .75a.75.75 0 0 0-1.5 0">
+            </path>
+          </svg>
+        </span>
+        <div>Camere non fumatori</div>
+      </li>
+      <li>
+        <span class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="50px">
+            <path d="M21.75 5.25a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0m1.5 0a3.75 3.75 0 1 0-7.5 0 3.75 3.75 0 0 0 7.5 0m-6.182 15.093.188 1.5A.75.75 0 0 0 18 22.5h3a.75.75 0 0 0 .744-.657l.75-6-.744.657h1.5a.75.75 0 0 0 .75-.75V13.5a4.5 4.5 0 0 0-7.2-3.6.75.75 0 1 0 .9 1.2 3 3 0 0 1 4.8 2.4v2.25l.75-.75h-1.5a.75.75 0 0 0-.744.657l-.75 6L21 21h-3l.744.657-.188-1.5a.75.75 0 0 0-1.488.186M6.75 5.25a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0m1.5 0a3.75 3.75 0 1 0-7.5 0 3.75 3.75 0 0 0 7.5 0M5.444 20.157l-.188 1.5L6 21H3l.744.657-.75-6A.75.75 0 0 0 2.25 15H.75l.75.75V13.5a3 3 0 0 1 4.8-2.4.75.75 0 1 0 .9-1.2A4.5 4.5 0 0 0 0 13.5v2.25c0 .414.336.75.75.75h1.5l-.744-.657.75 6A.75.75 0 0 0 3 22.5h3a.75.75 0 0 0 .744-.657l.188-1.5a.75.75 0 0 0-1.488-.186M13.5 9a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0M15 9a3 3 0 1 0-6 0 3 3 0 0 0 6 0m-3 3a4.5 4.5 0 0 0-4.5 4.5v.75c0 .414.336.75.75.75h1.5l-.74-.627.75 4.5a.75.75 0 0 0 .74.627H12a.75.75 0 0 0 0-1.5h-1.5l.74.627-.75-4.5a.75.75 0 0 0-.74-.627h-1.5l.75.75v-.75a3 3 0 0 1 3-3 .75.75 0 0 0 0-1.5m0 1.5a3 3 0 0 1 3 3v.75l.75-.75h-1.5a.75.75 0 0 0-.74.627l-.75 4.5.74-.627H12a.75.75 0 0 0 0 1.5h1.5a.75.75 0 0 0 .74-.627l.75-4.5-.74.627h1.5a.75.75 0 0 0 .75-.75v-.75A4.5 4.5 0 0 0 12 12a.75.75 0 0 0 0 1.5">
+            </path>
+          </svg>
+        </span>
+        <div>Disponibilità di camere familiari</div>
+      </li>
+      <li>
+        <span class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="50px">
+            <path d="M11.25.75v7.5a.75.75 0 0 0 1.5 0V.75a.75.75 0 0 0-1.5 0m4.031.914-3.75 3h.938l-3.75-3a.75.75 0 1 0-.938 1.172l3.75 3a.75.75 0 0 0 .938 0l3.75-3a.75.75 0 1 0-.938-1.172M1.883 7.024l6.495 3.75a.75.75 0 0 0 .75-1.299l-6.495-3.75a.75.75 0 1 0-.75 1.3zM4.69 3.99l.723 4.748.468-.812-4.473 1.748a.75.75 0 0 0 .546 1.398l4.473-1.748a.75.75 0 0 0 .468-.812l-.723-4.748a.75.75 0 1 0-1.482.226M2.632 18.274l6.495-3.75a.75.75 0 1 0-.75-1.298l-6.495 3.75a.75.75 0 1 0 .75 1.299zm-1.224-3.948 4.473 1.748-.468-.812-.723 4.748a.75.75 0 0 0 1.482.226l.723-4.748a.75.75 0 0 0-.468-.812l-4.473-1.748a.75.75 0 0 0-.546 1.398M12.75 23.25v-7.5a.75.75 0 0 0-1.5 0v7.5a.75.75 0 0 0 1.5 0m-4.031-.914 3.75-3h-.938l3.75 3a.75.75 0 0 0 .937-1.172l-3.75-3a.75.75 0 0 0-.937 0l-3.75 3a.75.75 0 0 0 .938 1.172m13.399-5.36-6.495-3.75a.75.75 0 0 0-.75 1.298l6.495 3.75a.75.75 0 0 0 .75-1.299zm-2.807 3.034-.724-4.748-.468.812 4.473-1.748a.75.75 0 0 0-.546-1.398l-4.473 1.748a.75.75 0 0 0-.468.812l.723 4.748a.75.75 0 0 0 1.483-.226m2.057-14.285-6.495 3.75a.75.75 0 0 0 .75 1.3l6.495-3.75a.75.75 0 0 0-.75-1.3m1.224 3.95-4.473-1.749.468.812.724-4.748a.75.75 0 0 0-1.483-.226l-.723 4.748a.75.75 0 0 0 .468.812l4.473 1.748a.75.75 0 0 0 .546-1.398zM11.625 7.6 8.377 9.475a.75.75 0 0 0-.375.65v3.75a.75.75 0 0 0 .375.65l3.248 1.874a.75.75 0 0 0 .75 0l3.248-1.875a.75.75 0 0 0 .375-.649v-3.75a.75.75 0 0 0-.375-.65L12.375 7.6a.75.75 0 0 0-.75 0m.75 1.3h-.75l3.248 1.874-.375-.649v3.75l.375-.65-3.248 1.876h.75l-3.248-1.876.375.65v-3.75l-.375.65z">
+            </path>
+          </svg>
+        </span>
+        <div>Aria condizionata</div>
+      </li>
+      <li>
+        <span class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="50px">
+            <path d="M15.375 10.875a1.875 1.875 0 1 1-3.75 0 1.875 1.875 0 0 1 3.75 0m1.5 0a3.375 3.375 0 1 0-6.75 0 3.375 3.375 0 0 0 6.75 0m.375 12.375V18.7l-.667.745C20.748 18.98 24 15.925 24 10.5a2.25 2.25 0 0 0-4.5 0c0 1.945-.609 3.154-1.64 3.848a3.97 3.97 0 0 1-2.132.652H9a3.75 3.75 0 1 0 0 7.5h3a2.25 2.25 0 0 0 0-4.5H9a.75.75 0 0 0 0 1.5h3a.75.75 0 0 1 0 1.5H9a2.25 2.25 0 0 1 0-4.5h6.74a5.43 5.43 0 0 0 2.957-.908C20.154 14.613 21 12.932 21 10.5a.75.75 0 0 1 1.5 0c0 4.6-2.628 7.069-6.083 7.455a.75.75 0 0 0-.667.745v4.55a.75.75 0 0 0 1.5 0m-7.5-1.5v1.5a.75.75 0 0 0 1.5 0v-1.5a.75.75 0 0 0-1.5 0M.75 1.5h1.5l-.53-.22 1.402 1.402a.75.75 0 0 0 1.06-1.06L2.78.22A.75.75 0 0 0 2.25 0H.75a.75.75 0 1 0 0 1.5m2.983 3.754a.01.01 0 0 1 .016.002c-.542-1.072-.1-2.426 1.008-2.988a2.25 2.25 0 0 1 2.037 0c-.041-.022-.043-.029-.04-.034l.002-.002-3.013 3.012zm1.07 1.05 3.002-3A1.49 1.49 0 0 0 7.51.951 3.77 3.77 0 0 0 4.079.929 3.75 3.75 0 0 0 2.43 5.971a1.49 1.49 0 0 0 2.382.323zm3.408-.968 1.116.62a.75.75 0 1 0 .728-1.312l-1.116-.62a.75.75 0 1 0-.728 1.312m1.964-2.233 1.615.44a.75.75 0 1 0 .394-1.448l-1.615-.44a.75.75 0 1 0-.394 1.448m4.217 1.15 1.615.44a.75.75 0 0 0 .396-1.447l-1.615-.44a.75.75 0 0 0-.396 1.447M5.697 7.388l.577 1.038a.75.75 0 1 0 1.312-.728L7.009 6.66a.75.75 0 1 0-1.312.728M3.284 8.94l.44 1.615a.75.75 0 1 0 1.448-.394l-.44-1.615a.75.75 0 1 0-1.448.394m1.15 4.219.246.896a.75.75 0 1 0 1.446-.396l-.245-.896a.75.75 0 1 0-1.446.396z">
+            </path>
+          </svg>
+        </span>
+        <div>Bagno privato</div>
+      </li>
+      <li>
+        <span class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="50px">
+            <path d="M2.25 2.25h19.5L21 1.5v21l.75-.75H2.25l.75.75v-21zm0-1.5a.75.75 0 0 0-.75.75v21c0 .414.336.75.75.75h19.5a.75.75 0 0 0 .75-.75v-21a.75.75 0 0 0-.75-.75zm-1.5 1.5h22.5a.75.75 0 0 0 0-1.5H.75a.75.75 0 0 0 0 1.5m0 21h22.5a.75.75 0 0 0 0-1.5H.75a.75.75 0 0 0 0 1.5M18 15v3.539a.21.21 0 0 1-.211.211H6.211A.21.21 0 0 1 6 18.539v-7.078a.21.21 0 0 1 .211-.211h11.578c.116 0 .211.095.211.211zm1.5 0v-3.539a1.71 1.71 0 0 0-1.711-1.711H6.211A1.71 1.71 0 0 0 4.5 11.461v7.078a1.71 1.71 0 0 0 1.711 1.711h11.578a1.71 1.71 0 0 0 1.711-1.711zM9 14.25h6a.75.75 0 0 0 0-1.5H9a.75.75 0 0 0 0 1.5M5.25 4.875a.375.375 0 1 1 0-.75.375.375 0 0 1 0 .75.75.75 0 0 0 0-1.5 1.125 1.125 0 1 0 0 2.25 1.125 1.125 0 0 0 0-2.25.75.75 0 0 0 0 1.5m3 0a.375.375 0 1 1 0-.75.375.375 0 0 1 0 .75.75.75 0 0 0 0-1.5 1.125 1.125 0 1 0 0 2.25 1.125 1.125 0 0 0 0-2.25.75.75 0 0 0 0 1.5m-6 3.375h19.5a.75.75 0 0 0 0-1.5H2.25a.75.75 0 0 0 0 1.5m11.25-3h5.25a.75.75 0 0 0 0-1.5H13.5a.75.75 0 0 0 0 1.5">
+            </path>
+          </svg>
+        </span>
+        <div>Cucina</div>
+      </li>
+      <li>
+        <span class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="50px">
+            <path d="M15.375 10.875a1.875 1.875 0 1 1-3.75 0 1.875 1.875 0 0 1 3.75 0m1.5 0a3.375 3.375 0 1 0-6.75 0 3.375 3.375 0 0 0 6.75 0m.375 12.375V18.7l-.667.745C20.748 18.98 24 15.925 24 10.5a2.25 2.25 0 0 0-4.5 0c0 1.945-.609 3.154-1.64 3.848a3.97 3.97 0 0 1-2.132.652H9a3.75 3.75 0 1 0 0 7.5h3a2.25 2.25 0 0 0 0-4.5H9a.75.75 0 0 0 0 1.5h3a.75.75 0 0 1 0 1.5H9a2.25 2.25 0 0 1 0-4.5h6.74a5.43 5.43 0 0 0 2.957-.908C20.154 14.613 21 12.932 21 10.5a.75.75 0 0 1 1.5 0c0 4.6-2.628 7.069-6.083 7.455a.75.75 0 0 0-.667.745v4.55a.75.75 0 0 0 1.5 0m-7.5-1.5v1.5a.75.75 0 0 0 1.5 0v-1.5a.75.75 0 0 0-1.5 0M.75 1.5h1.5l-.53-.22 1.402 1.402a.75.75 0 0 0 1.06-1.06L2.78.22A.75.75 0 0 0 2.25 0H.75a.75.75 0 1 0 0 1.5m2.983 3.754a.01.01 0 0 1 .016.002c-.542-1.072-.1-2.426 1.008-2.988a2.25 2.25 0 0 1 2.037 0c-.041-.022-.043-.029-.04-.034l.002-.002-3.013 3.012zm1.07 1.05 3.002-3A1.49 1.49 0 0 0 7.51.951 3.77 3.77 0 0 0 4.079.929 3.75 3.75 0 0 0 2.43 5.971a1.49 1.49 0 0 0 2.382.323zm3.408-.968 1.116.62a.75.75 0 1 0 .728-1.312l-1.116-.62a.75.75 0 1 0-.728 1.312m1.964-2.233 1.615.44a.75.75 0 1 0 .394-1.448l-1.615-.44a.75.75 0 1 0-.394 1.448m4.217 1.15 1.615.44a.75.75 0 0 0 .396-1.447l-1.615-.44a.75.75 0 0 0-.396 1.447M5.697 7.388l.577 1.038a.75.75 0 1 0 1.312-.728L7.009 6.66a.75.75 0 1 0-1.312.728M3.284 8.94l.44 1.615a.75.75 0 1 0 1.448-.394l-.44-1.615a.75.75 0 1 0-1.448.394m1.15 4.219.246.896a.75.75 0 1 0 1.446-.396l-.245-.896a.75.75 0 1 0-1.446.396z">
+            </path>
+          </svg>
+        </span>
+        <div>Doccia</div>
+      </li>
+      <li>
+        <span class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="50px">
+            <path d="M21 12v9.75a.75.75 0 0 1-.75.75H3.75a.75.75 0 0 1-.75-.75V2.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 .75.75zm1.5 0V2.25A2.25 2.25 0 0 0 20.25 0H3.75A2.25 2.25 0 0 0 1.5 2.25v19.5A2.25 2.25 0 0 0 3.75 24h16.5a2.25 2.25 0 0 0 2.25-2.25zM5.25 4.5h3a.75.75 0 0 0 0-1.5h-3a.75.75 0 0 0 0 1.5m-3 3h19.5a.75.75 0 0 0 0-1.5H2.25a.75.75 0 0 0 0 1.5M16.5 15a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0m1.5 0a6 6 0 1 0-12 0 6 6 0 0 0 12 0m0-10.875a.375.375 0 1 1 0-.75.375.375 0 0 1 0 .75.75.75 0 0 0 0-1.5 1.125 1.125 0 1 0 0 2.25 1.125 1.125 0 0 0 0-2.25.75.75 0 0 0 0 1.5m-4.5 0a.375.375 0 1 1 0-.75.375.375 0 0 1 0 .75.75.75 0 0 0 0-1.5 1.125 1.125 0 1 0 0 2.25 1.125 1.125 0 0 0 0-2.25.75.75 0 0 0 0 1.5M10.5 15a1.5 1.5 0 0 1 1.5-1.5.75.75 0 0 0 0-1.5 3 3 0 0 0-3 3 .75.75 0 0 0 1.5 0">
+            </path>
+          </svg>
+        </span>
+        <div>Lavatrice</div>
+      </li>
+    </ul>
+  </div>
+
+
+
+  <!-- Dintorni -->
+  <div class="vicinanze">
+
+    <h3>Nei dintorni</h3>
+
+    <div class="zona-grid">
+
+      <div class="zona-card">
+        <h4>🌳 Attrazioni</h4>
+        <ul>
+          <li><span>Torre Borraco – Chiosco Bar / Parco Giochi</span><span>600 m</span></li>
+          <li><span>Il Fonte Pliniano</span><span>13 km</span></li>
+        </ul>
+      </div>
+
+      <div class="zona-card">
+        <h4>🍽 Ristoranti e caffetterie</h4>
+        <ul>
+          <li><span>Pagoda</span><span>950 m</span></li>
+          <li><span>Il Riccio</span><span>1,1 km</span></li>
+          <li><span>Bassa Marea</span><span>1,2 km</span></li>
+        </ul>
+      </div>
+
+      <div class="zona-card">
+        <h4>🏖 Spiagge</h4>
+        <ul>
+          <li><span>Spiaggia pubblica di San Pietro in Bevagna</span><span>0 m</span></li>
+          <li><span>MurMur Beach</span><span>1,8 km</span></li>
+          <li><span>Spiaggia libera di Urmo</span><span>2,5 km</span></li>
+          <li><span>Monaco Mirante</span><span>4,4 km</span></li>
+        </ul>
+      </div>
+
+      <div class="zona-card">
+        <h4>🚆 Trasporti</h4>
+        <ul>
+          <li><span>Treno: Stazione di Manduria</span><span>13 km</span></li>
+          <li><span>Treno: Erchie – Torre S.S.</span><span>18 km</span></li>
+          <li><span>Aeroporto di Brindisi</span><span>56 km</span></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- servizi -->
+  <div class="servizi-struttura">
+
+    <!-- Titolo principale -->
+    <h3>Santorini House: Servizi</h3>
+
+    <div class="servizi-columns">
+
+      <div class="servizi-card">
+        <h4>Ideali per il tuo soggiorno</h4>
+        <ul>
+          <li>Bagno privato</li>
+          <li>Animali ammessi</li>
+          <li>Fronte spiaggia</li>
+          <li>Spiaggia</li>
+          <li>Aria condizionata</li>
+          <li>TV a schermo piatto</li>
+          <li>Cucina</li>
+          <li>Lavatrice</li>
+          <li>Camere non fumatori</li>
+          <li>Disponibilità di camere familiari</li>
+        </ul>
+      </div>
+
+      <div class="servizi-card">
+        <h4>Parcheggio</h4>
+        <p>Parcheggio non disponibile</p>
+      </div>
+
+      <div class="servizi-card">
+        <h4>Internet</h4>
+        <p>Connessione internet non disponibile</p>
+      </div>
+
+      <div class="servizi-card">
+        <h4>Cucina</h4>
+        <ul>
+          <li>Tavolo da pranzo</li>
+          <li>Prodotti per le pulizie</li>
+          <li>Tostapane</li>
+          <li>Piano cottura</li>
+          <li>Forno</li>
+          <li>Utensili da cucina</li>
+          <li>Lavatrice</li>
+          <li>Forno a microonde</li>
+          <li>Frigorifero</li>
+          <li>Angolo cottura</li>
+        </ul>
+      </div>
+
+      <div class="servizi-card">
+        <h4>Camera da letto</h4>
+        <ul>
+          <li>Biancheria da letto</li>
+          <li>Armadio o guardaroba</li>
+          <li>Letti lunghi (oltre 2 metri)</li>
+        </ul>
+      </div>
+
+      <div class="servizi-card">
+        <h4>Bagno</h4>
+        <ul>
+          <li>Carta igienica</li>
+          <li>Asciugamani</li>
+          <li>Asciugamani/lenzuola disponibili a pagamento</li>
+          <li>Vasca o doccia</li>
+          <li>Bagno privato</li>
+          <li>WC</li>
+          <li>Asciugacapelli</li>
+          <li>Doccia</li>
+        </ul>
+      </div>
+
+      <div class="servizi-card">
+        <h4>Area soggiorno</h4>
+        <ul>
+          <li>Zona pranzo</li>
+          <li>Zona soggiorno</li>
+        </ul>
+      </div>
+
+      <div class="servizi-card">
+        <h4>Media e tecnologia</h4>
+        <ul>
+          <li>TV a schermo piatto</li>
+          <li>Canali satellitari</li>
+          <li>TV</li>
+        </ul>
+      </div>
+
+      <div class="servizi-card">
+        <h4>Servizi in camera</h4>
+        <ul>
+          <li>Presa elettrica vicino al letto</li>
+          <li>Divano letto</li>
+          <li>Stendibiancheria</li>
+          <li>Zanzariera</li>
+          <li>Pavimento in marmo o in piastrelle</li>
+          <li>Ingresso indipendente</li>
+        </ul>
+      </div>
+
+      <div class="servizi-card">
+        <h4>Animali</h4>
+        <ul>
+        <li>Animali ammessi. Non è previsto alcun supplemento.</li>
+        </ul>
+      </div>
+
+      <div class="servizi-card">
+        <h4>Accessibilità</h4>
+        <ul>
+        <li>Intera unità situata al piano terra</li>
+        </ul>
+      </div>
+
+      <div class="servizi-card">
+        <h4>Spazi all'aperto</h4>
+        <ul>
+          <li>Arredamento da esterni</li>
+          <li>Fronte spiaggia</li>
+          <li>Zona pranzo all'aperto</li>
+          <li>Patio</li>
+          <li>Terrazza</li>
+        </ul>
+      </div>
+
+      <div class="servizi-card">
+        <h4>Attività</h4>
+        <ul>
+          <li>Spiaggia</li>
+        </ul>
+      </div>
+
+      <div class="servizi-card">
+        <h4>Caratteristiche dell'edificio</h4>
+        <ul>
+        <li>Indipendente</li>
+        </ul>
+      </div>
+
+      <div class="servizi-card">
+        <h4>Servizi di accoglienza</h4>
+        <ul>
+        <li>Check-in e check-out privati</li>
+        </ul>
+      </div>
+
+      <div class="servizi-card">
+        <h4>Varie</h4>
+        <ul>
+          <li>Area fumatori</li>
+          <li>Aria condizionata</li>
+          <li>Struttura interamente non fumatori</li>
+          <li>Riscaldamento</li>
+          <li>Disponibilità di camere familiari</li>
+          <li>Camere non fumatori</li>
+        </ul>
+      </div>
+
+      <div class="servizi-card">
+        <h4>Protezione e sicurezza</h4>
+        <ul>
+          <li>Estintori</li>
+          <li>Telecamere a circuito chiuso all'esterno della struttura</li>
+          <li>Accesso con chiavi</li>
+        </ul>
+      </div>
+
+      <div class="servizi-card">
+        <h4>Lingue parlate</h4>
+        <ul>
+        <li>Italiano</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Valutazioni -->
+  <div class="valutazioni">
+    <div class="valutazione-header">
+      <div class="valutazione-left">
+        <div class="valutazione-testo">
+          <h3>Recensioni degli ospiti</h3>
+        </div>
+        <div class="valutazione-top">
+          <span class="voto">9,7</span>
+          <span class="valutazione-scritta"><strong>Eccezionale</strong></span>
+        </div>
+      </div>
+
+      <p class="valutazione-note">
+        Valutazioni basate sulle recensioni pubblicate su Booking.com
+      </p>
+    </div>
+
+<!-- Valutazioni categorie originali -->
+    <div class="valutazioni-categorie-fun">
+      <div class="categoria-fun">
+        <div class="icona">👥</div>
+        <span class="nome-categoria">Staff</span>
+        <div class="punteggio-fun">10,0</div>
+      </div>
+      <div class="categoria-fun">
+        <div class="icona">🛎️</div>
+        <span class="nome-categoria">Servizi</span>
+        <div class="punteggio-fun">9,9</div>
+      </div>
+      <div class="categoria-fun">
+        <div class="icona">🧹</div>
+        <span class="nome-categoria">Pulizia</span>
+        <div class="punteggio-fun">10,0</div>
+      </div>
+      <div class="categoria-fun">
+        <div class="icona">🛌</div>
+        <span class="nome-categoria">Comfort</span>
+        <div class="punteggio-fun">9,5</div>
+      </div>
+      <div class="categoria-fun">
+        <div class="icona">💰</div>
+        <span class="nome-categoria">Rapporto qualità-prezzo</span>
+        <div class="punteggio-fun">9,6</div>
+      </div>
+      <div class="categoria-fun">
+        <div class="icona">📍</div>
+        <span class="nome-categoria">Posizione</span>
+        <div class="punteggio-fun">9,6</div>
+      </div>
+    </div>
+
+    <p class="valutazioni-fonte">
+      Punteggi basati sulle recensioni degli ospiti pubblicate su Booking.com
+    </p>
+
+  </div>
+
+
+
+
+  <!-- CTA -->
+  <section class="cta">
+    <a href="contatti.html" class="btn">Contattaci</a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Case Vacanze da Nenella</p>
+  </footer>
+
+<script>
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightbox-img');
+const counter = document.getElementById('lightbox-counter');
+const titleBox = document.getElementById('lightbox-title');
+const images = Array.from(document.querySelectorAll('.gallery-item'));
+const closeBtn = document.querySelector('.close');
+const prevBtn = document.querySelector('.prev');
+const nextBtn = document.querySelector('.next');
+
+let currentIndex = 0;
+
+function showImage(index) {
+  currentIndex = index;
+  const img = images[index];
+  lightboxImg.src = img.src;
+  titleBox.textContent = img.dataset.title || '';
+  counter.textContent = `${index + 1} / ${images.length}`;
+  lightbox.style.display = 'flex';
+}
+
+// Apertura lightbox
+images.forEach((img, i) => {
+  img.addEventListener('click', () => showImage(i));
+});
+
+// Apertura lightbox clic su +X
+const thumbMore = document.querySelector('.thumb-more');
+if (thumbMore) {
+  thumbMore.addEventListener('click', () => {
+    const startIndex = parseInt(thumbMore.dataset.start);
+    showImage(startIndex);
+  });
+}
+
+// Chiudi lightbox
+closeBtn.addEventListener('click', () => lightbox.style.display = 'none');
+lightbox.addEventListener('click', e => {
+  if (e.target === lightbox) lightbox.style.display = 'none';
+});
+
+// Navigazione con frecce a schermo
+prevBtn.addEventListener('click', e => {
+  e.stopPropagation();
+  showImage((currentIndex - 1 + images.length) % images.length);
+});
+
+nextBtn.addEventListener('click', e => {
+  e.stopPropagation();
+  showImage((currentIndex + 1) % images.length);
+});
+
+// Navigazione con tastiera
+document.addEventListener('keydown', e => {
+  if (lightbox.style.display === 'flex') {
+    if (e.key === 'ArrowLeft') prevBtn.click();
+    if (e.key === 'ArrowRight') nextBtn.click();
+    if (e.key === 'Escape') closeBtn.click();
+  }
+});
+
+// Swipe per mobile
+let startX = 0;
+lightbox.addEventListener('touchstart', e => {
+  startX = e.touches[0].clientX;
+});
+lightbox.addEventListener('touchend', e => {
+  let endX = e.changedTouches[0].clientX;
+  if (endX - startX > 50) prevBtn.click(); // swipe a destra
+  if (startX - endX > 50) nextBtn.click(); // swipe a sinistra
+});
+</script>
+
+
+</body>
+</html>
