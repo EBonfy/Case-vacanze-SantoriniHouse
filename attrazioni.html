@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NOME SITO - Dintorni & Attrazioni </title>
+
+  <link rel="stylesheet" href="css/style.css">
+ 
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <div class="logo">NOME SITO</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#case">Appartamenti</a></li>
+        <li><a href="attrazioni.html">Dintorni</a></li>
+        <li><a href="contatti.html">Contatti</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero-attrazioni">
+    <svg class="path-overlay" viewBox="0 0 1000 400" preserveAspectRatio="none">
+
+      <!-- Percorso secondario sfumato (ombra) -->
+      <path d="M20 380
+                C80 320, 150 280, 220 310
+                S350 370, 420 300
+                S520 150, 600 180
+                S720 280, 800 220
+                S900 100, 980 60"
+            fill="none"
+            stroke="white"
+            stroke-width="2"
+            stroke-dasharray="4 8"
+            opacity="0.15" />
+
+      <!-- Percorso principale -->
+      <path d="M20 380
+                C80 320, 150 280, 220 310
+                S350 370, 420 300
+                S520 150, 600 180
+                S720 280, 800 220
+                S900 100, 980 60"
+            fill="none"
+            stroke="white"
+            stroke-width="3"
+            stroke-linecap="round"
+            stroke-dasharray="8 10"
+            opacity="0.55" />
+
+      <!-- Cerchi decorativi di sfondo -->
+      <circle cx="420" cy="300" r="18" fill="none" stroke="white" stroke-width="1" opacity="0.12"/>
+      <circle cx="600" cy="180" r="18" fill="none" stroke="white" stroke-width="1" opacity="0.12"/>
+
+      <!-- TAPPA 1 -->
+      <g transform="translate(20,380)">
+        <circle r="10" fill="#3a7abf" stroke="white" stroke-width="2"/>
+        <path d="M0 -24 C-8 -24 -8 -10 0 4 C8 -10 8 -24 0 -24Z" fill="#ff4d4d"/>
+        <circle cy="-14" r="3.5" fill="white"/>
+      </g>
+
+      <!-- TAPPA 2 -->
+      <g transform="translate(220,310)">
+        <circle r="10" fill="#3a7abf" stroke="white" stroke-width="2"/>
+        <path d="M0 -24 C-8 -24 -8 -10 0 4 C8 -10 8 -24 0 -24Z" fill="#ff4d4d"/>
+        <circle cy="-14" r="3.5" fill="white"/>
+      </g>
+
+      <!-- TAPPA 3 -->
+      <g transform="translate(420,300)">
+        <circle r="10" fill="#3a7abf" stroke="white" stroke-width="2"/>
+        <path d="M0 -24 C-8 -24 -8 -10 0 4 C8 -10 8 -24 0 -24Z" fill="#ff4d4d"/>
+        <circle cy="-14" r="3.5" fill="white"/>
+      </g>
+
+      <!-- TAPPA 4 -->
+      <g transform="translate(600,180)">
+        <circle r="10" fill="#3a7abf" stroke="white" stroke-width="2"/>
+        <path d="M0 -24 C-8 -24 -8 -10 0 4 C8 -10 8 -24 0 -24Z" fill="#ff4d4d"/>
+        <circle cy="-14" r="3.5" fill="white"/>
+      </g>
+
+      <!-- TAPPA 5 -->
+      <g transform="translate(800,220)">
+        <circle r="10" fill="#3a7abf" stroke="white" stroke-width="2"/>
+        <path d="M0 -24 C-8 -24 -8 -10 0 4 C8 -10 8 -24 0 -24Z" fill="#ff4d4d"/>
+        <circle cy="-14" r="3.5" fill="white"/>
+      </g>
+
+      <!-- TAPPA 6 (finale) -->
+      <g transform="translate(980,60)">
+        <circle r="13" fill="#ff4d4d" stroke="white" stroke-width="2.5"/>
+        <path d="M0 -28 C-10 -28 -10 -10 0 6 C10 -10 10 -28 0 -28Z" fill="#ff4d4d"/>
+        <circle cy="-17" r="4.5" fill="white"/>
+      </g>
+
+      <!-- Stelline decorative sparse -->
+      <g opacity="0.3">
+        <polygon points="120,100 123,110 133,110 125,116 128,126 120,120 112,126 115,116 107,110 117,110"
+                fill="white" transform="scale(0.5) translate(120,80)"/>
+        <polygon points="700,50 703,60 713,60 705,66 708,76 700,70 692,76 695,66 687,60 697,60"
+                fill="white" transform="scale(0.4) translate(1050,60)"/>
+        <polygon points="300,50 303,60 313,60 305,66 308,76 300,70 292,76 295,66 287,60 297,60"
+                fill="white" transform="scale(0.35) translate(560,60)"/>
+      </g>
+
+    </svg>
+    <div class="hero-content">
+      <div class="eyebrow">San Pietro in Bevagna · Puglia ionica</div>
+      <h1>Cosa fare nei dintorni</h1>
+      <p>Spiagge selvagge, riserve naturali e paesaggi sospesi nel tempo — tutto raggiungibile in pochi minuti.</p>
+      <div class="filtri">
+        <button class="filtro-btn active" data-filtro="tutti">Tutto</button>
+        <button class="filtro-btn" data-filtro="mare">🌊 Mare & spiagge</button>
+        <button class="filtro-btn" data-filtro="natura">🌿 Natura & escursioni</button>
+        <button class="filtro-btn" data-filtro="gite">🗺️ Gite fuori porta</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTENUTO -->
+  <div class="container">
+    <section class="section">
+
+      <!-- ═══ SPIAGGE ═══ -->
+      <div class="cat-block card-item" data-cat="mare">
+        <div class="section-divider">
+          <div class="line"></div>
+          <span><span class="icon">🌊</span> Mare & spiagge</span>
+          <div class="line"></div>
+        </div>
+
+        <!-- Featured: Spiaggia di San Pietro -->
+        <div class="featured-card">
+          <div class="featured-img">
+            <img
+              src="img/mare_16.jpg"
+              alt="Spiaggia di San Pietro in Bevagna"
+              onerror="this.style.background='linear-gradient(135deg,#1a3d5c,#3a7abf,#7ab8e8)';this.removeAttribute('src');"
+            />
+            <span class="badge-cat">Mare</span>
+            <span class="badge-dist">📍 Qui sotto casa</span>
+          </div>
+          <div class="featured-body">
+            <div>
+              <h2>Spiaggia di San Pietro in Bevagna</h2>
+              <p>
+                Quindici chilometri di spiaggia sabbiosa bagnata dal Mar Ionio, con acque limpide e fondali bassi. Un litorale quasi interamente libero, tranquillo e selvaggio, con dune e macchia mediterranea a fare da cornice.<br>
+                È la spiaggia di casa — a due passi dagli appartamenti.
+              </p>
+              <div class="tag-row">
+                <span class="tag">15 km di litorale</span>
+                <span class="tag">Spiaggia libera</span>
+                <span class="tag">Acque basse</span>
+                <span class="tag">Dune naturali</span>
+              </div>
+            </div>
+            <a href="https://maps.app.goo.gl/9N29cz1oZK4h1vnW9" target="_blank" class="btn-primary" style="background:#3587d8;">Vedi su Maps</a>
+          </div>
+        </div>
+
+        <!-- Griglia spiagge secondarie -->
+        <div class="cards-grid">
+
+          <!-- Foce del Chidro -->
+          <div class="card-attrazione" data-cat="mare">
+            <div class="card-img">
+              <img
+                src="img/mare_14.jpg"
+                alt="Foce del Chidro"
+                onerror="this.style.background='linear-gradient(135deg,#0F6E56,#5DCAA5)';this.removeAttribute('src');"
+              />
+              <span class="badge-cat badge-small">Fiume</span>
+            </div>
+            <div class="card-body">
+              <div class="meta">34 min a piedi</div>
+              <h3>Foce del Fiume Chidro</h3>
+              <p>Dove le acque dolci del Chidro incontrano il Mar Ionio. Un angolo suggestivo e protetto, con sabbia finissima e un microclima unico. Secondo la leggenda, le conchiglie qui sono le "lacrime di San Pietro".</p>
+              <span class="dist-badge">Riserva naturale</span>
+              <a href="https://maps.app.goo.gl/fAKwKdGNbmG7YmfZA" target="_blank" class="btn-maps">Vedi su Maps</a>
+            </div>
+          </div>
+
+          <!-- Punta Prosciutto -->
+          <div class="card-attrazione" data-cat="mare">
+            <div class="card-img">
+              <img
+                src="img/punta_prosciutto.webp"
+                alt="Punta Prosciutto"
+                onerror="this.style.background='linear-gradient(135deg,#1a3d5c,#3a7abf,#7ab8e8)';this.removeAttribute('src');"
+              />
+              <span class="badge-cat badge-small">Mare</span>
+            </div>
+            <div class="card-body">
+              <div class="meta">11 km · 19 min</div>
+              <h3>Punta Prosciutto</h3>
+              <p>Sabbia bianca finissima e acque color smeraldo che sembrano caraibiche. Considerata tra le spiagge più belle d'Italia, vale assolutamente la gita.</p>
+              <span class="dist-badge">Spiaggia libera</span>
+              <a href="https://maps.app.goo.gl/X3xFTLZ825ikK8N9A" target="_blank" class="btn-maps">Vedi su Maps</a>
+            </div>
+          </div>
+
+          <!-- Torre Colimena -->
+          <div class="card-attrazione" data-cat="mare">
+            <div class="card-img">
+              <img
+                src="img/torre_colimena.webp"
+                alt="Torre Colimena"
+                onerror="this.style.background='linear-gradient(135deg,#1a3d5c,#3a7abf)';this.removeAttribute('src');"
+              />
+              <span class="badge-cat badge-small">Mare</span>
+            </div>
+            <div class="card-body">
+              <div class="meta">9 km · 15 min</div>
+              <h3>Torre Colimena</h3>
+              <p>Dune di sabbia, macchia mediterranea e ginestre fino al mare. La torre costiera cinquecentesca domina il paesaggio all'interno della Riserva delle Saline.</p>
+              <span class="dist-badge">Riserva naturale</span>
+              <a href="https://maps.app.goo.gl/tWahf6rRZWvvyWw59" target="_blank" class="btn-maps">Vedi su Maps</a>
+            </div>
+          </div>
+
+          <!-- Campomarino -->
+          <div class="card-attrazione" data-cat="mare">
+            <div class="card-img">
+              <img
+                src="img/campomarino.jpg"
+                alt="Campomarino di Maruggio"
+                onerror="this.style.background='linear-gradient(135deg,#185FA5,#7ab8e8)';this.removeAttribute('src');"
+              />
+              <span class="badge-cat badge-small">Mare</span>
+            </div>
+            <div class="card-body">
+              <div class="meta">9 km · 12 min</div>
+              <h3>Campomarino di Maruggio</h3>
+              <p>Nove chilometri di spiagge con dune bianche spettacolari e pinete ombrose. Acque bassissime, perfette per le famiglie con bambini.</p>
+              <span class="dist-badge">Spiaggia libera</span>
+              <a href="https://maps.app.goo.gl/2DUtTVEy9qLRMaZe9" target="_blank" class="btn-maps">Vedi su Maps</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ═══ NATURA ═══ -->
+      <div class="cat-block card-item" data-cat="natura">
+        <div class="section-divider section-gap">
+          <div class="line"></div>
+          <span><span class="icon">🌿</span> Natura & escursioni</span>
+          <div class="line"></div>
+        </div>
+
+        <!-- Featured: Bosco Cuturi -->
+        <div class="featured-card">
+          <div class="featured-img">
+            <img
+              src="img/bosco_cuturi.jpg"
+              alt="Bosco Cuturi e Riserva Chidro"
+              onerror="this.style.background='linear-gradient(135deg,#085041,#1D9E75,#9FE1CB)';this.removeAttribute('src');"
+            />
+            <span class="badge-cat natura">Bosco</span>
+            <span class="badge-dist">📍 Partenza da San Pietro · 14,7 km loop</span>
+          </div>
+          <div class="featured-body">
+            <div>
+              <h2>Bosco dei Cuturi</h2>
+              <p>
+                Il percorso escursionistico più amato della zona: un anello di quasi 15 km che attraversa il Bosco Cuturi, con lecci e querce centenarie.
+              </p>
+              <div class="tag-row">
+                <span class="tag">Trekking facile</span>
+                <span class="tag">Natura incontaminata</span>
+              </div>
+            </div>
+            <a href="https://maps.app.goo.gl/XNMPKz7ywAx9Q1538" target="_blank" class="btn-primary" style="background:#1d9e75c0;">Vedi su Maps</a>
+          </div>
+        </div>
+
+        <!-- Griglia natura -->
+        <div class="cards-grid">
+
+          <!-- Salina dei Monaci -->
+          <div class="card-attrazione">
+            <div class="card-img">
+              <img
+                src="img/salina_monaci.webp"
+                alt="Salina dei Monaci"
+                onerror="this.style.background='linear-gradient(135deg,#1D9E75,#9FE1CB)';this.removeAttribute('src');"
+              />
+              <span class="badge-cat natura">Riserva Naturale</span>
+            </div>
+            <div class="card-body">
+              <div class="meta natura-meta">8 km · 10 min</div>
+              <h3>Riserva Salina dei Monaci</h3>
+              <p>Area umida protetta tra Torre Colimena e Porto Cesareo, rifugio per fenicotteri rosa, aironi e anatre selvatiche. Il giro della salina è una passeggiata tranquilla adatta a tutta la famiglia.</p>
+              <span class="dist-badge">Oasi WWF</span>
+              <a href="https://maps.app.goo.gl/fuCoMNdTENTYnoSH7" target="_blank" class="btn-maps">Vedi su Maps</a>
+            </div>
+          </div>
+
+          <!-- Grotte della Poesia -->
+          <div class="card-attrazione">
+            <div class="card-img">
+              <img
+                src="img/grotta_poesia.jpg"
+                alt="Grotte della Poesia"
+                onerror="this.style.background='linear-gradient(135deg,#3C3489,#7F77DD)';this.removeAttribute('src');"
+              />
+              <span class="badge-cat natura">Piscina Naturale</span>
+            </div>
+            <div class="card-body">
+              <div class="meta" style="color:#534AB7;">~90 km · 1h 20min</div>
+              <h3>Grotte della Poesia</h3>
+              <p>Una delle più grandi aree di arte rupestre del Mediterraneo, con oltre 3.000 graffiti preistorici incisi sulle pareti di due grotte affacciate direttamente sul mare.</p>
+              <span class="dist-badge">Arte rupestre</span>
+              <a href="https://maps.app.goo.gl/QByhToBsdi77jkAi9" target="_blank" class="btn-maps">Vedi su Maps</a>
+            </div>
+          </div>
+
+          <!-- Grotte di Castellana -->
+          <div class="card-attrazione">
+            <div class="card-img">
+              <img
+                src="img/grotta_castellana.webp"
+                alt="Grotte di Castellana"
+                onerror="this.style.background='linear-gradient(135deg,#26215C,#7F77DD)';this.removeAttribute('src');"
+              />
+              <span class="badge-cat natura">Grotte</span>
+            </div>
+            <div class="card-body">
+              <div class="meta" style="color:#3C3489;">~100 km · 1h 30min</div>
+              <h3>Grotte di Castellana</h3>
+              <p>Il complesso di grotte carsiche più famoso d'Italia, con oltre 3 km di gallerie sotterranee e la spettacolare Grotta Bianca, considerata tra le più belle al mondo.</p>
+              <span class="dist-badge">Patrimonio naturale</span>
+              <a href="https://maps.app.goo.gl/2ed8VG3sZkRLK3NS8" target="_blank" class="btn-maps">Vedi su Maps</a>
+            </div>
+          </div>
+
+          <!-- Cave di Bauxite -->
+          <div class="card-attrazione">
+            <div class="card-img">
+              <img
+                src="img/cava_bauxite.jpg"
+                alt="Cave di Bauxite"
+                onerror="this.style.background='linear-gradient(135deg,#993C1D,#D85A30,#F0997B)';this.removeAttribute('src');"
+              />
+              <span class="badge-cat natura">Natura</span>
+            </div>
+            <div class="card-body">
+              <div class="meta" style="color:#993C1D;">~65 km · 55 min</div>
+              <h3>Cave di Bauxite</h3>
+              <p>Un paesaggio marziano nel cuore del Salento: le cave dismesse si sono riempite d'acqua nel tempo, creando un lago dal colore rosso intenso circondato da pareti ocra. Un posto inaspettato e spettacolare.</p>
+              <span class="dist-badge">Otranto</span>
+              <a href="https://maps.app.goo.gl/Yk4PbzLjHTBhRdkw9" target="_blank" class="btn-maps">Vedi su Maps</a>
+            </div>
+          </div>
+
+          <!-- Grotta Zinzulusa -->
+          <div class="card-attrazione">
+            <div class="card-img">
+              <img
+                src="img/grotta_zinzulusa.webp"
+                alt="Grotta Zinzulusa"
+                onerror="this.style.background='linear-gradient(135deg,#042C53,#378ADD,#B5D4F4)';this.removeAttribute('src');"
+              />
+              <span class="badge-cat natura">Grotte</span>
+            </div>
+            <div class="card-body">
+              <div class="meta" style="color:#185FA5;">~85 km · 1h 10min</div>
+              <h3>Grotta Zinzulusa</h3>
+              <p>Una grotta marina scavata dal mare nella roccia calcarea, con stalattiti e stalagmiti che scendono fino all'acqua. Si trova a Castro, uno dei tratti di costa più suggestivi del Salento adriatico.</p>
+              <span class="dist-badge">Castro · Grotta marina</span>
+              <a href="https://maps.app.goo.gl/8NJE4vYAsCHyhv4W8" target="_blank" class="btn-maps">Vedi su Maps</a>
+            </div>
+          </div>
+
+          <!-- Porto Selvaggio -->
+          <div class="card-attrazione">
+            <div class="card-img">
+              <img
+                src="img/porto_selvaggio.jpg"
+                alt="Porto Selvaggio"
+                onerror="this.style.background='linear-gradient(135deg,#085041,#1D9E75,#5DCAA5)';this.removeAttribute('src');"
+              />
+              <span class="badge-cat natura">Natura</span>
+            </div>
+            <div class="card-body">
+              <div class="meta natura-meta">~75 km · 1h</div>
+              <h3>Porto Selvaggio</h3>
+              <p>Una delle riserve naturali più belle del Salento: pineta fitta fino alla scogliera, sentieri nel bosco e una caletta nascosta raggiungibile solo a piedi. Mare cristallino e nessun stabilimento balneare.</p>
+              <span class="dist-badge">Riserva naturale</span>
+              <a href="https://maps.app.goo.gl/aZCvBKRnVKz3jej67" target="_blank" class="btn-maps">Vedi su Maps</a>
+            </div>
+          </div>
+
+          <!-- Santa Maria di Leuca -->
+          <div class="card-attrazione">
+            <div class="card-img">
+              <img
+                src="img/leuca.webp"
+                alt="Santa Maria di Leuca"
+                onerror="this.style.background='linear-gradient(135deg,#0C447C,#378ADD,#B5D4F4)';this.removeAttribute('src');"
+              />
+              <span class="badge-cat natura">Esursione</span>
+            </div>
+            <div class="card-body">
+              <div class="meta">~110 km · 1h 20min</div>
+              <h3>Santa Maria di Leuca</h3>
+              <p>Il punto più a sud della Puglia, dove il Mar Ionio incontra l'Adriatico. Il santuario in cima alla scogliera, le ville Liberty sul lungomare e le grotte marine ne fanno una meta unica.</p>
+              <span class="dist-badge">Finibus Terrae</span>
+              <a href="https://maps.app.goo.gl/h4VeFWDaitBL8uAg9" target="_blank" class="btn-maps">Vedi su Maps</a>
+            </div>
+          </div>
+
+          <!-- Riserva di Porto Cesareo -->
+          <div class="card-attrazione">
+            <div class="card-img">
+              <img
+                src="img/porto_cesareo.webp"
+                alt="Riserva di Porto Cesareo"
+                onerror="this.style.background='linear-gradient(135deg,#1a3d5c,#3a7abf,#7ab8e8)';this.removeAttribute('src');"
+              />
+              <span class="badge-cat natura">Natura</span>
+            </div>
+            <div class="card-body">
+              <div class="meta">~22 km · 25 min</div>
+              <h3>Riserva di Porto Cesareo</h3>
+              <p>Area marina protetta con acque tra le più trasparenti del Mediterraneo. Fondali ricchi di posidonia, isolotti sabbiosi e spiagge da cartolina a pochi chilometri da San Pietro.</p>
+              <span class="dist-badge">Area marina protetta</span>
+              <a href="https://maps.app.goo.gl/krZPmkhsn9ZxJUxi6" target="_blank" class="btn-maps">Vedi su Maps</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ═══ GITE FUORI PORTA ═══ -->
+      <div class="cat-block card-item" data-cat="gite">
+        <div class="section-divider section-gap">
+          <div class="line"></div>
+          <span><span class="icon">🗺️</span> Gite fuori porta</span>
+          <div class="line"></div>
+        </div>
+
+        <!-- Featured: Manduria -->
+        <div class="featured-card">
+          <div class="featured-img">
+            <img
+              src="img/manduria.jpg"
+              alt="Manduria"
+              onerror="this.style.background='linear-gradient(135deg,#712B13,#D85A30,#F0997B)';this.removeAttribute('src');"
+            />
+            <span class="badge-cat storia">Storia & gusto</span>
+            <span class="badge-dist">📍 12 km · 15 min in auto</span>
+          </div>
+          <div class="featured-body">
+            <div>
+              <h2>Manduria</h2>
+              <p>
+                A soli 15 minuti dalle case, Manduria è la patria del vino Primitivo — uno dei rossi più pregiati d'Italia. Il centro storico custodisce le antiche Mura Messapiche e un parco archeologico unico. Una tappa imperdibile anche solo per una cena in una delle sue cantine storiche.
+              </p>
+              <div class="tag-row">
+                <span class="tag">Vino Primitivo</span>
+                <span class="tag">Mura Messapiche</span>
+                <span class="tag">Centro storico</span>
+                <span class="tag">15 min da casa</span>
+              </div>
+            </div>
+            <a href="https://maps.app.goo.gl/K6jJsFJVMxkvnXRj6" target="_blank" class="btn-primary" style="background:#bc5938;">Vedi su Maps</a>
+          </div>
+        </div>
+
+        <!-- Griglia gite -->
+        <div class="cards-grid">
+
+          <!-- Lecce -->
+          <div class="card-attrazione">
+            <div class="card-img">
+              <img
+                src="img/lecce.jpg"
+                alt="Lecce"
+                onerror="this.style.background='linear-gradient(135deg,#854F0B,#EF9F27)';this.removeAttribute('src');"
+              />
+              <span class="badge-cat storia">Storia & gusto</span>
+            </div>
+            <div class="card-body">
+              <div class="meta" style="color:#854F0B;">~60 km · 50 min</div>
+              <h3>Lecce</h3>
+              <p>La "Firenze del Sud" con le sue chiese barocche in pietra dorata, il centro storico vivace e la gastronomia salentina. Una città che lascia il segno.</p>
+              <span class="dist-badge">Patrimonio barocco</span>
+              <a href="https://maps.app.goo.gl/o13FeX2qs912PqPH8" target="_blank" class="btn-maps">Vedi su Maps</a>
+            </div>
+          </div>
+
+          <!-- Ostuni -->
+          <div class="card-attrazione">
+            <div class="card-img">
+              <img
+                src="img/ostuni.jpg"
+                alt="Ostuni"
+                onerror="this.style.background='linear-gradient(135deg,#444441,#888780)';this.removeAttribute('src');"
+              />
+              <span class="badge-cat storia">Storia & gusto</span>
+            </div>
+            <div class="card-body">
+              <div class="meta" style="color:#5F5E5A;">~55 km · 50 min</div>
+              <h3>Ostuni</h3>
+              <p>La città bianca arroccata su una collina, con vicoli imbiancati a calce e una vista mozzafiato sulla valle degli ulivi. Uno dei borghi più belli d'Italia.</p>
+              <span class="dist-badge">Borgo medievale</span>
+              <a href="https://maps.app.goo.gl/51b3FoT4qQLZGUag8" target="_blank" class="btn-maps">Vedi su Maps</a>
+            </div>
+          </div>
+
+          <!-- Alberobello -->
+          <div class="card-attrazione">
+            <div class="card-img">
+              <img
+                src="img/alberobello.jpg"
+                alt="Alberobello"
+                onerror="this.style.background='linear-gradient(135deg,#3C3489,#7F77DD)';this.removeAttribute('src');"
+              />
+              <span class="badge-cat storia">Storia & gusto</span>
+            </div>
+            <div class="card-body">
+              <div class="meta" style="color:#534AB7;">~80 km · 1h 10min</div>
+              <h3>Alberobello</h3>
+              <p>I celebri trulli, le costruzioni coniche in pietra a secco patrimonio UNESCO. Un paesaggio unico al mondo da vedere almeno una volta nella vita.</p>
+              <span class="dist-badge">Patrimonio UNESCO</span>
+              <a href="https://maps.app.goo.gl/Gn7z6kYUfB8fLUVv5" target="_blank" class="btn-maps">Vedi su Maps</a>
+            </div>
+          </div>
+
+          <!-- Gallipoli -->
+          <div class="card-attrazione">
+            <div class="card-img">
+              <img
+                src="img/gallipoli.jpg"
+                alt="Gallipoli"
+                onerror="this.style.background='linear-gradient(135deg,#185FA5,#7ab8e8)';this.removeAttribute('src');"
+              />
+              <span class="badge-cat storia">Storia & gusto</span>
+            </div>
+            <div class="card-body">
+              <div class="meta">~70 km · 1h</div>
+              <h3>Gallipoli</h3>
+              <p>Il borgo antico si estende su un'isola collegata alla terraferma da un ponte. Mare cristallino, spiagge premiate e una vita notturna tra le più animate del Salento.</p>
+              <span class="dist-badge">Borgo sul mare</span>
+              <a href="https://maps.app.goo.gl/yTgHMRAhKE2hGEuHA" target="_blank" class="btn-maps">Vedi su Maps</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ═══ MAPPA ═══ -->
+      <div class="section-gap">
+        <div class="section-divider">
+          <div class="line"></div>
+          <span>📍 Sulla mappa</span>
+          <div class="line"></div>
+        </div>
+      </div>
+
+      <div class="map-section">
+        <div class="map-tabs-wrapper">
+          <button class="map-arrow map-arrow-left" id="arrowLeft">&#8592;</button>
+          <div class="map-tabs" id="mapTabs">
+            <button class="map-tab active" data-idx="0">📍 San Pietro</button>
+            <button class="map-tab" data-idx="1">🌊 Foce del Chidro</button>
+            <button class="map-tab" data-idx="2">🌊 Punta Prosciutto</button>
+            <button class="map-tab" data-idx="3">🌊 Torre Colimena</button>
+            <button class="map-tab" data-idx="4">🌊 Campomarino</button>
+            <button class="map-tab" data-idx="5">🌿 Bosco Cuturi</button>
+            <button class="map-tab" data-idx="6">🌿 Salina dei Monaci</button>
+            <button class="map-tab" data-idx="7">🌿 Grotte della Poesia</button>
+            <button class="map-tab" data-idx="8">🌿 Grotte di Castellana</button>
+            <button class="map-tab" data-idx="9">🌿 Cave di Bauxite</button>
+            <button class="map-tab" data-idx="10">🌿 Grotta Zinzulusa</button>
+            <button class="map-tab" data-idx="11">🌿 Porto Selvaggio</button>
+            <button class="map-tab" data-idx="12">🌿 Santa Maria di Leuca</button>
+            <button class="map-tab" data-idx="13">🌿 Porto Cesareo</button>
+            <button class="map-tab" data-idx="14">🗺️ Manduria</button>
+            <button class="map-tab" data-idx="15">🗺️ Lecce</button>
+            <button class="map-tab" data-idx="16">🗺️ Ostuni</button>
+            <button class="map-tab" data-idx="17">🗺️ Alberobello</button>
+            <button class="map-tab" data-idx="18">🗺️ Gallipoli</button>
+          </div>
+          <button class="map-arrow map-arrow-right" id="arrowRight">&#8594;</button>
+        </div>
+
+        <iframe
+          id="mapIframe"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d74751.61375960764!2d17.707923323791647!3d40.2876585703079!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x134694a9d81e28e5%3A0x7e54ed907b0ebf3a!2s74024%20San%20Pietro%20In%20Bevagna%20TA!5e0!3m2!1sit!2sit!4v1777215678075!5m2!1sit!2sit"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Mappa attrazioni San Pietro in Bevagna"
+        ></iframe>
+
+        <div class="map-caption" id="mapCaption">
+          📍 Spiaggia di San Pietro in Bevagna — qui sotto casa
+        </div>
+      </div>
+      <p class="no-results" id="no-results">Nessuna attrazione trovata per questa categoria.</p>
+
+    </section>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <h3>nome sito</h3>
+        <p>Case vacanze vicino al mare.</p>
+      </div>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="appartamenti.html">Appartamenti</a>
+          <a href="attrazioni.html">Dintorni</a>
+          <a href="contatti.html">Contatti</a>
+        </div>
+      </div>
+      <div class="copyright">© 2025 Le Case sul Mare · San Pietro in Bevagna, Puglia</div>
+    </div>
+  </footer>
+
+  <script>
+    /* ── Navbar scroll ── */
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 50);
+    });
+
+    /* ── Filtri ── */
+    const btnFiltri = document.querySelectorAll('.filtro-btn');
+    const items     = document.querySelectorAll('.card-item');
+    const noResults = document.getElementById('no-results');
+
+    btnFiltri.forEach(btn => {
+      btn.addEventListener('click', () => {
+        btnFiltri.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const filtro = btn.dataset.filtro;
+        let visibili = 0;
+
+        items.forEach(item => {
+          const cat = item.dataset.cat;
+          const mostra = filtro === 'tutti' || cat === filtro;
+          item.style.display = mostra ? '' : 'none';
+          if (mostra) visibili++;
+        });
+
+        noResults.style.display = visibili === 0 ? 'block' : 'none';
+      
+        // Scroll al contenuto filtrato
+        if (filtro !== 'tutti') {
+          const target = document.querySelector(`.card-item[data-cat="${filtro}"]`);
+          if (target) {
+            setTimeout(() => {
+              const offset = target.getBoundingClientRect().top + window.scrollY - 90;
+              window.scrollTo({ top: offset, behavior: 'smooth' });
+            }, 50);
+          }
+        } else {
+          // Su "Tutto" torna all'inizio del contenuto
+          const container = document.querySelector('.section');
+          if (container) {
+            const offset = container.getBoundingClientRect().top + window.scrollY - 90;
+            window.scrollTo({ top: offset, behavior: 'smooth' });
+          }
+        }
+      });
+    });
+
+    /* ── Frecce mappa ── */
+    const tabsEl    = document.getElementById('mapTabs');
+    const arrowLeft = document.getElementById('arrowLeft');
+    const arrowRight= document.getElementById('arrowRight');
+
+    function updateArrows() {
+      arrowLeft.disabled  = tabsEl.scrollLeft <= 0;
+      arrowRight.disabled = tabsEl.scrollLeft >= tabsEl.scrollWidth - tabsEl.clientWidth - 1;
+    }
+
+    arrowLeft.addEventListener('click', () => {
+      tabsEl.scrollBy({ left: -200, behavior: 'smooth' });
+      setTimeout(updateArrows, 300);
+    });
+
+    arrowRight.addEventListener('click', () => {
+      tabsEl.scrollBy({ left: 200, behavior: 'smooth' });
+      setTimeout(updateArrows, 300);
+    });
+
+    tabsEl.addEventListener('scroll', updateArrows);
+    updateArrows();
+
+    const places = [
+    { label: "📍 Spiaggia di San Pietro in Bevagna — qui sotto casa", src: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d74751.61375960764!2d17.707923323791647!3d40.2876585703079!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x134694a9d81e28e5%3A0x7e54ed907b0ebf3a!2s74024%20San%20Pietro%20In%20Bevagna%20TA!5e0!3m2!1sit!2sit!4v1777215678075!5m2!1sit!2sit"},
+    { label: "🌊 Foce del Fiume Chidro — 2 min a piedi", src: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6085.270478700217!2d17.6804585!3d40.3060573!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x134694a7a7aab6ad%3A0xa4e83f2f8a69f330!2sRiserva%20Naturale%20della%20Foce%20del%20Fiume%20Chidro!5e0!3m2!1sit!2sit!4v1777215827775!5m2!1sit!2sit"},
+    { label: "🌊 Punta Prosciutto — 11 km · 15 min", src: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12172.380442977075!2d17.7555222!3d40.2958471!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x134696aa694337db%3A0xd69a9853e49cc1d2!2sPunta%20Prosciutto!5e0!3m2!1sit!2sit!4v1777215875799!5m2!1sit!2sit" },
+    { label: "🌊 Torre Colimena — 7 km · 10 min", src: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6085.889300888083!2d17.7376229!3d40.2991879!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1346940bae3f6a7b%3A0x1c828f51a714a289!2sTorre%20Colimena!5e0!3m2!1sit!2sit!4v1777215932808!5m2!1sit!2sit" },
+    { label: "🌊 Campomarino di Maruggio — 9 km · 12 min", src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12171.496465459864!2d17.5673955!3d40.30075395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1346e963feab1a99%3A0x607e9feddbbd65cc!2s74020%20Campomarino%20TA!5e0!3m2!1sit!2sit!4v1777215972762!5m2!1sit!2sit" },
+    { label: "🌿 Bosco Cuturi — partenza da San Pietro", src: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6081.989659458793!2d17.6510684!3d40.3424607!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1346eccf7ecad4dd%3A0x2e57f2c761ed74c0!2sBosco%20dei%20Cuturi!5e0!3m2!1sit!2sit!4v1777216034575!5m2!1sit!2sit" },
+    { label: "🌿 Riserva Salina dei Monaci — 8 km · 10 min", src: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6085.642805848485!2d17.7256059!3d40.3019243!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x134693f939494091%3A0xe5c5230daae277b1!2sRiserva%20Naturale%20LTO%20Salina%20Monaci!5e0!3m2!1sit!2sit!4v1777216079630!5m2!1sit!2sit" },
+    { label: "🌿 Grotte della Poesia — ~90 km · 1h 20min", src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3043.5443538505774!2d18.429597299999998!3d40.2858708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1344481f96e611c1%3A0xb6bc7e47e0ec0e25!2sGrotta%20della%20Poesia!5e0!3m2!1sit!2sit!4v1777216123477!5m2!1sit!2sit" },
+    { label: "🌿 Grotte di Castellana — ~100 km · 1h 30min", src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3016.8372254161986!2d17.149247850000002!3d40.87544625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1347b6d8723dcc97%3A0x8953cc53c9cb9e60!2s70013%20Grotte%20di%20Castellana%20BA!5e0!3m2!1sit!2sit!4v1777216171821!5m2!1sit!2sit" },
+    { label: "🌿 Cave di Bauxite — ~65 km · 55 min", src: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1525.2295644386852!2d18.5004799!3d40.1320555!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1344419f347a8663%3A0x797d713bde2f625e!2sLaghetto%20Cave%20di%20Bauxite!5e0!3m2!1sit!2sit!4v1777216207592!5m2!1sit!2sit" },
+    { label: "🌿 Grotta Zinzulusa — ~85 km · 1h 10min", src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3055.8445114372144!2d18.4319717!3d40.011920599999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13446ccd061aa779%3A0x5849609e6bca7795!2sGrotta%20della%20Zinzulusa!5e0!3m2!1sit!2sit!4v1777216256093!5m2!1sit!2sit" },
+    { label: "🌿 Porto Selvaggio — ~75 km · 1h", src: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5140.068091381725!2d17.97362216975595!3d40.14771627231131!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1346a1926a55a1c3%3A0xeb2f02960a03f8db!2sSpiaggia%20di%20Porto%20Selvaggio!5e0!3m2!1sit!2sit!4v1777216321066!5m2!1sit!2sit" },
+    { label: "🌿 Santa Maria di Leuca — ~110 km · 1h 20min", src: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12261.595952287636!2d18.3476778!3d39.7980412!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1343f5f155842c67%3A0x1ab00f76f9460054!2s73040%20Santa%20Maria%20di%20Leuca%20LE!5e0!3m2!1sit!2sit!4v1777216392380!5m2!1sit!2sit" },
+    { label: "🌿 Riserva di Porto Cesareo — ~22 km · 25 min", src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12178.557963834539!2d17.89913275!3d40.26154259999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1346999b6faf8771%3A0xe65a519295e33f01!2s73010%20Porto%20Cesareo%20LE!5e0!3m2!1sit!2sit!4v1777216427308!5m2!1sit!2sit" },
+    { label: "🗺️ Manduria — 12 km · 15 min", src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24306.98528648133!2d17.629522100000003!3d40.4005834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1346f284cccad659%3A0x7b5f4d4f222d323d!2s74024%20Manduria%20TA!5e0!3m2!1sit!2sit!4v1777216479892!5m2!1sit!2sit" },
+    { label: "🗺️ Lecce — ~60 km · 50 min", src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48647.49914298642!2d18.1742945!3d40.3541307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13442ee42f2d1109%3A0x9b5b5a4c6ab377f0!2s73100%20Lecce%20LE!5e0!3m2!1sit!2sit!4v1777216512425!5m2!1sit!2sit" },
+    { label: "🗺️ Ostuni — ~55 km · 50 min", src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12094.392164477216!2d17.580451649999997!3d40.7268644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1346435718d3ceb1%3A0x1c366a4ea72bfafa!2s72017%20Ostuni%20BR!5e0!3m2!1sit!2sit!4v1777216537423!5m2!1sit!2sit" },
+    { label: "🗺️ Alberobello — ~80 km · 1h 10min", src: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d387157.4882842229!2d17.2773897!3d40.7033117!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1347b26487f9383d%3A0x803e3f2f028a5d8!2s70011%20Alberobello%20BA!5e0!3m2!1sit!2sit!4v1777216570259!5m2!1sit!2sit" },
+    { label: "🗺️ Gallipoli — ~70 km · 1h", src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24431.4715660111!2d17.994253299999997!3d40.054575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1346a6547b66b1c7%3A0xd07ffbdd89ad753!2s73014%20Gallipoli%20LE!5e0!3m2!1sit!2sit!4v1777216611009!5m2!1sit!2sit" },
+  ];
+
+  document.getElementById('mapTabs').addEventListener('click', e => {
+    const btn = e.target.closest('.map-tab');
+    if (!btn) return;
+    document.querySelectorAll('.map-tab').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const i = +btn.dataset.idx;
+    document.getElementById('mapIframe').src = places[i].src;
+    document.getElementById('mapCaption').textContent = places[i].label;
+  });
+  </script>
+</body>
+</html>

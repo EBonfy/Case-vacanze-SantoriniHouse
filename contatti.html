@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NOME SITO - Contatti</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <div class="logo">NOME SITO</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#case">Appartamenti</a></li>
+        <li><a href="attrazioni.html">Dintorni</a></li>
+        <li><a href="contatti.html">Contatti</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero-small">
+    <div class="hero-content">
+      <h1>Contattaci</h1>
+      <p>Siamo a tua disposizione per informazioni e prenotazioni</p>
+    </div>
+  </header>
+
+  <!-- SEZIONE CONTATTI -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- COLONNA SINISTRA: info -->
+        <div class="contact-info">
+
+          <a href="tel:+393284658186" class="contact-item">
+            <div class="contact-icon">📞</div>
+            <div class="contact-item-text">
+              <h4>Telefono</h4>
+              <span>+39 3284658186</span>
+              <p>Sempre a disposizione</p>
+            </div>
+          </a>
+
+          <a href="https://wa.me/393284658186?text=Ciao!%20Vorrei%20informazioni%20sull'appartamento." target="_blank" class="contact-item">
+            <div class="contact-icon">💬</div>
+            <div class="contact-item-text">
+              <h4>Scrivici su WhatsApp</h4>
+              <span>Apri la chat</span>
+              <p>Risposta rapida entro poche ore</p>
+            </div>
+          </a>
+
+          <a href="mailto:info@nomesito.it" class="contact-item">
+            <div class="contact-icon">✉️</div>
+            <div class="contact-item-text">
+              <h4>Email</h4>
+              <span>info@nomesito.it</span>
+              <p>Risposta entro 24 ore</p>
+            </div>
+          </a>
+
+          <div class="contact-item" style="cursor: default;">
+            <div class="contact-icon">📍</div>
+            <div class="contact-item-text">
+              <h4>Dove siamo</h4>
+              <a href="https://maps.app.goo.gl/nNJJDsY7MTFDHeiBA" target="_blank" class="contact-map-link">
+                <span>San Pietro in Bevagna, Taranto</span>
+              </a>
+              <p>Puglia, Italia</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- COLONNA DESTRA: form -->
+        <div class="contact-form-box">
+          <h3>Inviaci un messaggio</h3>
+          <p class="form-subtitle">Compila il modulo e scegli come contattarci</p>
+          <p class="form-note">I campi contrassegnati con <span class="required">*</span> sono obbligatori</p>
+          <div class="form-group">
+            <label for="nome">Nome <span class="required">*</span></label>
+            <input type="text" id="nome" placeholder="Name">
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="youremail@email.it">
+          </div>
+
+          <div class="form-group">
+            <label for="telefono">Numero di telefono <span class="required">*</span></label>
+            <input type="tel" id="telefono" placeholder="+39 XXX XXX XXXX">
+          </div>
+
+          <div class="form-group">
+            <label for="appartamento">Appartamento di interesse <span class="required">*</span></label>
+            <select id="appartamento">
+              <option value="">— Seleziona —</option>
+              <option>Filodendri</option>
+              <option>Santorini House</option>
+              <option>Santorini By Santorini House</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="checkin">Data arrivo <span class="required">*</span></label>
+              <input type="date" id="checkin">
+            </div>
+            <div class="form-group">
+              <label for="checkout">Data partenza <span class="required">*</span></label>
+              <input type="date" id="checkout">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="messaggio">Messaggio <span class="required">*</span></label>
+            <textarea id="messaggio" placeholder="Scrivi qui la tua richiesta..."></textarea>
+          </div>
+
+          <div class="form-actions">
+            <button class="btn-submit btn-email" onclick="inviaEmail()">
+              ✉️ Invia per email
+            </button>
+            <button class="btn-submit btn-whatsapp" onclick="inviaWhatsApp()">
+              💬 Invia su WhatsApp
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <h3>nome sito</h3>
+        <p>Case vacanze vicino al mare.</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="index.html#case">Appartamenti</a>
+        <a href="attrazioni.html">Dintorni</a>
+        <a href="contatti.html">Contatti</a>
+      </div>
+    </div>
+    <p class="copyright">© 2026 nome sito</p>
+  </footer>
+
+  <script>
+    /* NAVBAR */
+    const navbar = document.querySelector(".navbar");
+    window.addEventListener("scroll", () => {
+      navbar.classList.toggle("scrolled", window.scrollY > 50);
+    });
+
+    /* FORM */
+    function raccogliDati() {
+  return {
+    nome:         document.getElementById("nome").value.trim(),
+    email:        document.getElementById("email").value.trim(),
+    telefono:     document.getElementById("telefono").value.trim(),
+    appartamento: document.getElementById("appartamento").value,
+    checkin:      document.getElementById("checkin").value,
+    checkout:     document.getElementById("checkout").value,
+    messaggio:    document.getElementById("messaggio").value.trim(),
+  };
+}
+
+function validaForm() {
+  const d = raccogliDati();
+
+  if (!d.nome) {
+    alert("Inserisci il tuo nome.");
+    return false;
+  }
+  if (!d.telefono) {
+    alert("Inserisci il tuo numero di telefono.");
+    return false;
+  }
+  if (!d.appartamento) {
+    alert("Seleziona l'appartamento di interesse.");
+    return false;
+  }
+  if (!d.checkin) {
+    alert("Inserisci la data di arrivo.");
+    return false;
+  }
+  if (!d.checkout) {
+    alert("Inserisci la data di partenza.");
+    return false;
+  }
+  if (!d.messaggio) {
+    alert("Scrivi un messaggio.");
+    return false;
+  }
+
+  return true;
+}
+
+function inviaEmail() {
+  if (!validaForm()) return;
+  if (!validaDate()) return;
+  const d = raccogliDati();
+  const subject = `Richiesta di ${d.nome}`;
+  const body =
+`Nome: ${d.nome}
+Email: ${d.email}
+Telefono: ${d.telefono}
+Appartamento: ${d.appartamento}
+Arrivo: ${d.checkin}
+Partenza: ${d.checkout}
+
+${d.messaggio}`;
+
+  window.location.href = `mailto:info@nomesito.it?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+}
+
+function inviaWhatsApp() {
+  if (!validaForm()) return;
+  if (!validaDate()) return;
+  const d = raccogliDati();
+  const testo =
+`Ciao! Sono ${d.nome}.
+Appartamento: ${d.appartamento}
+Arrivo: ${d.checkin}
+Partenza: ${d.checkout}
+Email: ${d.email}
+Telefono: ${d.telefono}
+
+${d.messaggio}`;
+
+  window.open(`https://wa.me/393284658186?text=${encodeURIComponent(testo)}`, "_blank");
+}
+    // Imposta il minimo selezionabile a oggi
+    const oggi = new Date().toISOString().split("T")[0];
+    document.getElementById("checkin").min  = oggi;
+    document.getElementById("checkout").min = oggi;
+
+    // Quando cambia il checkin, aggiorna il minimo del checkout
+    document.getElementById("checkin").addEventListener("change", function() {
+      document.getElementById("checkout").min = this.value || oggi;
+      // Se il checkout era già impostato a una data precedente, resettalo
+      const checkout = document.getElementById("checkout");
+      if (checkout.value && checkout.value <= this.value) {
+        checkout.value = "";
+      }
+    });
+  </script>
+
+</body>
+</html>

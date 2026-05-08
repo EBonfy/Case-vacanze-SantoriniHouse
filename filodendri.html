@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NOME SITO - Gli appartamenti</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <div class="logo">NOME SITO</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#case">Appartamenti</a></li>
+        <li><a href="attrazioni.html">Dintorni</a></li>
+        <li><a href="contatti.html">Contatti</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO DELLA CASA -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Casa dei Filodendri</h1>
+      <p>Eleganza, comfort e relax in un'appartamento vicino al mare.</p>
+      <a href="#strutture" class ="btn-primary"> Scorpri l'appartamento</a>
+    </div>
+  </header>
+
+  <!-- DESCRIZIONE GENERALE -->
+  <section class="section">
+  <div class="container">
+    <!-- Titolo e descrizione generale -->
+    <p class="section-subtitle">
+      Con vista sul mare, Casa dei filodendri mette a disposizione un alloggio dotato di terrazza e patio, a circa 40 metri da Spiaggia di San Pietro in Bevagna. Questo appartamento è a 49 km da Castello Aragonese.<br>
+      Questo appartamento con aria condizionata comprende 2 camere da letto, un soggiorno, una cucina con utensili, frigorifero e macchina da caffè, e 2 bagni con bidet e doccia. Presso questo appartamento troverete asciugamani e lenzuola tra i servizi offerti.<br>
+      Museo Archeologico Nazionale di Taranto - MArTA è a 48 km da questo appartamento, mentre Taranto Sotterranea si trova a 48 km dalla struttura. Aeroporto di Brindisi-Casale si trova a 55 km di distanza.
+    </p>
+  </div>
+  <div class="center" style="margin-top: 20px;">
+  <p style="margin-bottom: 10px; opacity: 0.7;">
+    <br>Visualizza la posizione esatta sulla mappa
+  </p>
+  <a href="https://maps.app.goo.gl/HNDvWAehiDRpgZYe9" target="_blank" class="btn-primary">
+    📍 Dove trovarci
+  </a>
+</div>
+</section>
+
+<!-- SERVIZI OFFERTI -->
+<section class="section alt-bg">
+  <div class="container">
+    <h2 class="section-title">Servizi offerti</h2>
+
+    <div class="grid servizi-grid">
+
+      <!-- 1 -->
+      <div class="card service-card">
+        <div class="service-front">
+          <h3>Mare e posizione</h3>
+        </div>
+        <div class="service-details">
+          <ul>
+            <li>Fronte spiaggia</li>
+            <li>Accesso diretto al mare</li>
+            <li>Vista mare</li>
+            <li>Terrazza solarium</li>
+            <li>Zona pranzo all'aperto</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="card service-card">
+        <div class="service-front">
+          <h3>Comfort e clima</h3>
+        </div>
+        <div class="service-details">
+          <ul>
+            <li>Aria condizionata</li>
+            <li>Riscaldamento</li>
+            <li>Ingresso indipendente</li>
+            <li>Ferro e asse da stiro</li>
+            <li>Zanzariera</li>
+            <li>Accesso con chiavi</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div class="card service-card">
+        <div class="service-front">
+          <h3>Cucina</h3>
+        </div>
+        <div class="service-details">
+          <ul>
+            <li>Cucina completamente attrezzata</li>
+            <li>Forno e piano cottura</li>
+            <li>Microonde e frigorifero</li>
+            <li>Macchina da caffè</li>
+            <li>Lavastoviglie</li>
+            <li>Tavolo da pranzo</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 4 -->
+      <div class="card service-card">
+        <div class="service-front">
+          <h3>Camera e bagno</h3>
+        </div>
+        <div class="service-details">
+          <ul>
+            <li>Biancheria da letto inclusa</li>
+            <li>Letti lunghi (oltre 2 m)</li>
+            <li>Bagno privato + bagno aggiuntivo</li>
+            <li>Doccia</li>
+            <li>Asciugacapelli e asciugamani</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 5 -->
+      <div class="card service-card">
+        <div class="service-front">
+          <h3>Soggiorno e tecnologia</h3>
+        </div>
+        <div class="service-details">
+          <ul>
+            <li>TV a schermo piatto</li>
+            <li>Canali via cavo</li>
+            <li>Zona soggiorno con divano</li>
+            <li>Divano letto</li>
+            <li>Lavatrice</li>
+            <li>Camere familiari disponibili</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 6 -->
+      <div class="card service-card">
+        <div class="service-front">
+          <h3>Servizi extra</h3>
+        </div>
+        <div class="service-details">
+          <ul>
+            <li>Animali ammessi</li>
+            <li>Minimarket sul posto</li>
+            <li>Piano terra (no barriere)</li>
+            <li>Non fumatori</li>
+            <li>Lingue parlate: Italiano</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- APPARTAMENTI / FOTO -->
+<section id="strutture" class="section">
+  <div class="container">
+    <h2 class="section-title">L'Appartamento</h2>
+
+    <div class="airbnb-grid" onclick="openGalleryFromGrid(); return false;">
+
+      <!-- Foto grande sinistra -->
+      <div class="airbnb-main">
+        <img src="img/filodendri/cucina_3.jpg" alt="Soggiorno">
+      </div>
+
+      <!-- 4 thumbnail destra in griglia 2x2 -->
+      <div class="airbnb-thumbs">
+        <div class="airbnb-thumb">
+          <img src="img/filodendri/camera_1.jpg" alt="Camera">
+        </div>
+        <div class="airbnb-thumb">
+          <img src="img/filodendri/camera_2.jpg" alt="Camera">
+        </div>
+        <div class="airbnb-thumb">
+          <img src="img/filodendri/bagno_1.jpg" alt="Bagno">
+        </div>
+        <div class="airbnb-thumb airbnb-last">
+          <img src="img/filodendri/camera_3.jpg" alt="Camera">
+          <button class="btn-all-photos" onclick="openGalleryFromGrid(); event.stopPropagation();">
+            📷 Vedi tutte le foto
+          </button>
+        </div>
+      </div>
+
+      <!-- Immagini nascoste per la galleria -->
+      <div class="gallery-data" style="display:none;">
+        <img src="img/filodendri/camera_1.jpg" data-title="Camera">
+        <img src="img/filodendri/camera_2.jpg" data-title="Camera">
+        <img src="img/filodendri/bagno_1.jpg" data-title="Bagno">
+        <img src="img/filodendri/camera_3.jpg" data-title="Camera">
+        <img src="img/filodendri/cucina_1.jpg" data-title="Cucina">
+        <img src="img/filodendri/cucina_2.jpg" data-title="Cucina">
+        <img src="img/filodendri/cucina_3.jpg" data-title="Cucina">
+        <img src="img/mare_1.jpg" data-title="Mare">
+        <img src="img/mare_2.jpg" data-title="Mare">
+        <img src="img/mare_3.jpg" data-title="Mare">
+        <img src="img/mare_4.jpg" data-title="Mare">
+        <img src="img/mare_5.jpg" data-title="Mare">
+        <img src="img/mare_6.jpg" data-title="Mare">
+        <img src="img/mare_7.jpg" data-title="Mare">
+        <img src="img/mare_8.jpg" data-title="Mare">
+        <img src="img/mare_9.jpg" data-title="Mare">
+        <img src="img/mare_10.jpg" data-title="Mare">
+        <img src="img/mare_11.jpg" data-title="Mare">
+        <img src="img/mare_12.jpg" data-title="Mare">
+        <img src="img/mare_13.jpg" data-title="Mare">
+        <img src="img/mare_14.jpg" data-title="Mare">
+        <img src="img/mare_15.jpg" data-title="Mare">
+        <img src="img/mare_16.jpg" data-title="Mare">
+        <img src="img/mare_17.jpg" data-title="Mare">
+        <img src="img/mare_18.jpg" data-title="Mare">
+      </div>
+
+    </div>
+
+    <div class="apartment-info">
+      <h3>Appartamento Filodendri</h3>
+      <p class="apartment-desc">Due camere, cucina attrezzata e terrazza panoramico.</p>
+      <div class="apartment-features">
+        <span>👥 4 ospiti</span>
+        <span>🛏️ 2 camere</span>
+        <span>🌅 1 soggiorno</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- NEI DINTORNI -->
+<section class="section alt-bg">
+  <div class="container info-box">
+
+    <h2 class="section-title">Nei dintorni della struttura</h2>
+    <p class="subheading">Posizione eccellente</p>
+
+    <div class="info-columns-3">
+
+      <div>
+        <h4>Cosa c'è in zona</h4>
+        <ul>
+          <li>Torre Borraco — 2 km</li>
+          <li>Il Fonte Pliniano — 13 km</li>
+        </ul>
+      </div>
+      <div>
+
+        <h4>Ristoranti e caffetterie</h4>
+        <ul>
+          <li>Bassa Marea — 1,1 km</li>
+          <li>Ristorante il Riccio — 1 km</li>
+          <li>Pagoda — 900 m</li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Spiagge nei dintorni</h4>
+        <ul>
+          <li>MurMur Beach — 1,7 km</li>
+          <li>San Pietro in Bevagna — 30 m</li>
+          <li>Urmo — 2,5 km</li>
+          <li>Monaco Mirante — 4,3 km</li>
+          <li>Specchiarica — 5 km</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Trasporti</h4>
+        <ul>
+          <li>Treno Manduria — 13 km</li>
+          <li>Erchie — 18 km</li>
+          <li>Aeroporto Brindisi — 56 km</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <p class="note">Le distanze sono stime e possono variare.</p>
+
+  </div>
+</section>
+
+<!--REGOLE-->
+<section class="section">
+  <div class="container info-box">
+
+    <h2 class="section-title">Regole della struttura</h2>
+
+    <div class="info-columns-2">
+
+      <div>
+        <h4>Check-in / Check-out</h4>
+        <p>Arrivo: disponibile 24 ore su 24</p>
+        <p>Partenza: disponibile 24 ore su 24</p>
+        <p class="note">Dovrai comunicare in anticipo alla struttura il tuo orario di arrivo.</p>
+      </div>
+
+      <div>
+        <h4>Condizioni</h4>
+        <p>Le condizioni di cancellazione e pagamento anticipato variano in base all’alloggio.</p>
+      </div>
+
+      <div>
+        <h4>Bambini</h4>
+        <p>I bambini di tutte le età sono i benvenuti.</p>
+        <p class="note">Non è richiesto un’età minima per il check-in.</p>
+      </div>
+
+      <div>
+        <h4>Culle</h4>
+        <p>Le culle sono soggette a disponibilità.</p>
+        <p>In questa struttura non sono disponibili letti supplementari.</p>
+      </div>
+
+      <div>
+        <h4>Regole generali</h4>
+        <p>Non è consentito fumare.</p>
+        <p>Non è permesso organizzare feste/eventi.</p>
+        <p>Animali ammessi. Potrebbe essere richiesto un supplemento.</p>
+      </div>
+
+      <div>
+        <h4>Informazioni utili</h4>
+        <p>Non sono ammessi addii al nubilato/celibato o eventi simili.</p>
+        <p><strong>Numero di licenza:</strong> 073012C200049425, IT073012C200049425</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- RECENSIONI -->
+<section class="section alt-bg">
+  <div class="container">
+    <h2 class="section-title">Recensioni</h2>
+    <div class="grid">
+      <div class="card">
+        <div class="card-content">
+          <p>"Casa curata, arredata con gusto e dotata veramente di tutto.<br>
+            Al piano superiore una bella e arieggiata terrazza, attrezzata con tavolo da pranzo e zona relax.<br>
+            Il bellissimo mare è veramente a due passi e anche svariati negozi sono a poca distanza: si può dimenticare la macchina per tutta la vacanza!"</p>
+          <p><strong>- Gianluca, Booking</strong></p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-content">
+            <p>"La casa è proprio come descritta, anzi molto meglio. È proprio vicino al mare.<br>
+            Essendoci andati a maggio ĺa spiaggia era tutta per noi"</p>
+          <p><strong>- Gloria, Booking</strong></p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <p>"Tutto era eccellente. L'alloggio ha un'ottima posizione.<br>
+            A pochi passi dalla spiaggia. Bellissima terrazza grande con vista mare. Nel complesso molto bello.<br>
+            I padroni di casa sono molto cordiali e sempre disponibili a rispondere alle vostre domande."</p>
+          <p><strong>- Ingrosso, Booking</strong></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <h3>nome sito</h3>
+        <p>Case vacanze vicino al mare.</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="index.html#case">Appartamenti</a>
+        <a href="attrazioni.html">Dintorni</a>
+        <a href="contatti.html">Contatti</a>
+      </div>
+    </div>
+    <p class="copyright">© 2026 nome sito</p>
+  </footer>
+
+<div id="gallery-modal" class="gallery-modal">
+  <div class="modal-content gallery-content">
+
+    <span class="close" onclick="closeGallery()">&times;</span>
+
+    <!-- TITOLO SOPRA -->
+    <h3 id="gallery-title"></h3>
+
+    <!-- IMMAGINE -->
+    <div class="gallery-slider">
+      <img id="gallery-image" src="" alt="Appartamento">
+    </div>
+
+    <!-- FRECCE AI LATI -->
+    <button class="gallery-nav prev" onclick="prevImage()">&#10094;</button>
+    <button class="gallery-nav next" onclick="nextImage()">&#10095;</button>
+
+    <!-- CONTATORE -->
+    <div id="gallery-counter" class="gallery-counter"></div>
+    <div class="gallery-strip" id="galleryStrip"></div>
+  </div>
+</div>
+
+<script>
+
+  const navbar = document.querySelector(".navbar");
+window.addEventListener("scroll", () => {
+  navbar.classList.toggle("scrolled", window.scrollY > 50);
+});
+
+let currentGallery = [];
+let currentIndex = 0;
+
+function openGalleryFromGrid() {
+  const images = document.querySelectorAll(".gallery-data img");
+  currentGallery = Array.from(images).map(img => ({
+    src: img.src,
+    title: img.dataset.title
+  }));
+  currentIndex = 0;
+  buildStrip();
+  document.getElementById("gallery-modal").classList.add("show");
+  document.body.style.overflow = "hidden";
+  updateImage();
+}
+
+function buildStrip() {
+  const strip = document.getElementById("galleryStrip");
+  strip.innerHTML = "";
+  currentGallery.forEach((item, i) => {
+    const thumb = document.createElement("img");
+    thumb.src = item.src;
+    thumb.alt = item.title || "";
+    thumb.onclick = (e) => { e.stopPropagation(); showImage(i); };
+    strip.appendChild(thumb);
+  });
+}
+
+function showImage(index) {
+  currentIndex = index;
+  const item = currentGallery[index];
+  document.getElementById("gallery-image").src = item.src;
+  document.getElementById("gallery-title").innerText = item.title || "";
+  document.getElementById("gallery-counter").innerText = `${index + 1} / ${currentGallery.length}`;
+
+  const thumbs = document.querySelectorAll("#galleryStrip img");
+  thumbs.forEach((t, i) => t.classList.toggle("active", i === index));
+
+  const strip = document.getElementById("galleryStrip");
+  const active = thumbs[index];
+  if (active) {
+    strip.scrollTo({
+      left: active.offsetLeft - strip.clientWidth / 2 + active.clientWidth / 2,
+      behavior: "smooth"
+    });
+  }
+}
+
+function updateImage() { showImage(currentIndex); }
+function nextImage() { showImage((currentIndex + 1) % currentGallery.length); }
+function prevImage() { showImage((currentIndex - 1 + currentGallery.length) % currentGallery.length); }
+
+function closeGallery() {
+  document.getElementById("gallery-modal").classList.remove("show");
+  document.body.style.overflow = "";
+}
+
+document.getElementById("gallery-modal").addEventListener("click", function(e) {
+  if (e.target === this) closeGallery();
+});
+
+document.addEventListener("keydown", function(e) {
+  if (!document.getElementById("gallery-modal").classList.contains("show")) return;
+  if (e.key === "Escape") closeGallery();
+  if (e.key === "ArrowRight") nextImage();
+  if (e.key === "ArrowLeft") prevImage();
+});
+</script>
+
+</body>
+</html>
