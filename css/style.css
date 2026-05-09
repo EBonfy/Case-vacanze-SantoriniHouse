@@ -571,6 +571,10 @@ h3 {
   margin: auto;
 }
 
+.experience-content p {
+  margin-top: 10px; /* aumenta o diminuisci a piacere */
+}
+
 /* FOOTER */
 .footer {
   background: #1a2e4a;
