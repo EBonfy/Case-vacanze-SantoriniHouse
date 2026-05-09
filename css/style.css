@@ -91,16 +91,6 @@ h3 {
 .nav-links a:hover::after {
   width: 100%;
 }
-/* CONTAINER */
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: auto;
-}
-
-.section {
-  padding: 80px 0;
-}
 
 .section-title {
   text-align: center;
@@ -159,23 +149,9 @@ h3 {
 }
 
 /* BUTTONS */
-.btn-primary {
-  background: #3a7abf;
-  color: white;
-  padding: 14px 32px;
-  text-decoration: none;
-  border-radius: 30px;
-  transition: all 0.3s ease;
-  font-weight: 500;
-}
 
 .btn-green {
   background: #1D9E75;
-}
-
-.btn-primary:hover {
-  background: #2a5f9e;
-  transform: translateY(-2px);
 }
 
 .btn-secondary {
@@ -302,7 +278,7 @@ h3 {
 }
 
 .gallery-slider img {
-  max-height: 85vh;
+  max-height: 75vh;
   max-width: 90%;
   object-fit: contain;
 }
@@ -334,7 +310,7 @@ h3 {
 
 .gallery-counter {
   position: absolute;
-  bottom: 90px;
+  bottom: 80px;
   left: 50%;
   transform: translateX(-50%);
   color: white;
