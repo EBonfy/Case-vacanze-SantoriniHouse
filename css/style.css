@@ -1477,6 +1477,10 @@ h3 {
     background-attachment: scroll;
   }
 
+  .hero-content {
+    padding: 0 20px;
+  }
+
   /* HERO ATTRAZIONI */
   .hero-attrazioni {
     height: auto;
@@ -1504,7 +1508,7 @@ h3 {
 
   /* FEATURED CARD */
   .featured-card {
-    grid-template-columns: 1fr !important;
+    grid-template-columns: 1fr;
     grid-template-rows: auto;
   }
 
